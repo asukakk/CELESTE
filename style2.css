@@ -1,0 +1,667 @@
+@charset "utf-8";
+
+/* ======================= */
+/* 共通設定*/
+/* ======================= */
+body {
+   margin: 0;
+   padding: 0;
+   color: #202020;
+   font-family :
+	YuGothic,    /* Mac用 */
+	'Yu Gothic', /* Windows用 */
+	sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+#menu-btn-check {
+    display: none;
+}
+
+/* ======================= */
+/* ヘッダー */
+/* ======================= */
+header {
+   width: 100%;
+   margin: 0 auto;;
+   background-color: #ffffff;  
+   position: fixed;
+   top: 0;
+   left: 0;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 10px;
+}
+
+.logo img {
+  width: 240px;
+}
+
+.list {
+   width: 880px;
+   height: 50px;
+   line-height: 50px;
+   margin: 100px auto 0 auto;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   list-style-type: none;
+}
+/* ======================= */
+
+.list a:link {
+  color: #202020;
+}
+
+.list a:hover{
+  text-decoration: underline;
+  color: #ff0000;
+}
+
+.list a:visited{
+  color: #551a8c;
+}
+
+.list a:active{
+  color: #ff0000;
+}
+/* ======================= */
+/* ABOUT CELESTE  */
+/* ======================= */
+#top {
+   width: 100%;   
+   margin: 0 auto;
+   text-align: center;
+  }
+
+#top h1 {
+   padding-top: 300px;
+}
+
+.cont {
+   width: 960px;
+   margin: 0 auto;
+   background-color: #ffffff;
+   
+   padding-bottom: 100px;
+}
+
+.main-oya {
+  width: 960px;   /* 全体のwidth確定したら、それに合わせて調整する  調整済み */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  background-image:url(../images/stone-tile03.jpg);
+}
+
+.main{
+  width: 25%;
+  height: 480px;
+  background-image:url(../images/about1.jpg); /* 画像サイズ調整中中 */
+  margin: 50px auto;
+}
+
+.main:first-child {
+  width:40%;
+  background-image:none;
+  background-color: rgb(255 255 255 / 0%);
+}
+.main:last-child {
+  width:25%;
+  background-image:url(../images/about2.jpg);/* 画像サイズ調整中 */
+  margin-right:80px;
+}
+
+.main h3{
+	text-align:left;
+	margin-left:120px;
+	font-size:26px;
+	margin-bottom:30px;
+	color:#8b4513;
+	
+}
+.main h5{
+	text-align:left;
+	padding-left:120px;
+	margin-bottom:30px;
+	line-height:2.3;
+	color:#8b4513;
+}
+/* ====================非表示↓========================= */
+.main h2{
+	display:none;
+}
+.soto{
+	display:none;
+}
+/* ============================================= */
+/* 会社概要*/
+/* ============================================= */
+.info-oya {
+  width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.info:nth-child(even) {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+
+.info:nth-child(5), .info:nth-child(4) , .info:nth-child(6) ,.info:nth-child(9){
+  text-align: right;
+}
+
+.info:nth-child(even){
+  padding: 30px 20px;
+}
+
+.info:nth-child(2),.info:nth-child(8) {
+  padding: 40px 20px;
+}
+.info dd {
+  margin-right: 20px;
+}
+
+.info dt {
+  margin-left: 30px;
+}
+
+/* ======================= */
+/* GALLERYページ */
+/* ======================= */
+#content {
+  width: 100%;
+  background-color: #ffffff;
+}
+#content h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+.sub-oya {
+  width: 960px;  
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.sub {
+  width: 35%;
+  margin: 10px auto 60px auto;
+  padding: 10px;
+}
+.sub img {
+  width: 100%; 
+}
+/* ======================= */
+/* フッター */
+/* ======================= */
+.footer-nav2 {
+ display: none;
+}
+
+footer {
+
+   width: 100%;
+   background-color: #ffffff;
+}
+
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f2f2f2;
+}
+
+#left {
+  background-color: #006837;
+  flex-basis: 30%;
+}
+  
+#right {
+  background-color: #e70006;
+  flex-basis: 30%;
+  text-align: center;
+ }
+  
+#right img {
+  width: 80px;
+}
+.box2 {
+   margin-top: 160px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin: 20px auto 0 auto;
+}
+
+.footer-nav {
+  width: 640px;
+  margin: 0px auto;
+}
+
+table {
+   margin: 0px auto;
+   font-size: small;
+}
+
+table td {
+   padding: 0 10px;
+}
+small {
+  margin: 20px 0;
+  text-align: center;
+}
+.map{
+	display:none;
+}
+.info-oya2{
+	display:none;
+}
+
+
+/* ======================= */
+/* レスポンシブ*/
+/* ======================= */
+
+@media screen and (max-width:768px) {
+
+/* ======================= */
+/* ハンバーガーメニュー*/
+/* ======================= */
+.list{
+	display:block;
+	width:auto;
+	height:auto;
+	line-height:20px;
+	margin:0 auto;
+}
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #cbcbcb;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+#menu-btn-check {
+    display: none;
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #3584bb;
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #202020;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#202020;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #202020;
+    border-right: solid 2px #202020;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #eee;
+    transition: all 0.5s;/*アニメーション設定*/
+}
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+/* ======================= */
+/* ヘッダー*/
+/* ======================= */
+
+header {
+}
+.logo {
+display:none;
+}
+/* ======================= */
+/* ABOUT CELESTE  */
+/* ======================= */
+
+#top{
+	width: 100%;
+    margin: 0 auto;
+}
+#top h1{
+	margin-top:0;
+	margin-bottom:0;
+	padding-top:80px;
+	background-image:url(../images/stone-tile03.jpg);
+	/*background-blend-mode:lighten;*/
+}
+.cont {
+   width: 100%;
+   margin: 0 auto;
+   background-color: #ffffff;
+}
+.main-oya{
+	width:100%;
+	display:block;
+	background-image:url(../images/stone-tile03.jpg);
+}
+.main{
+	width:100%;
+	height:300px;
+	margin:0 auto;
+	background-image:none;
+}
+.main:first-child {
+  width:100%;
+  height:250px;
+  padding-bottom:40px;
+}
+.main:last-child {
+  background-image:none;
+  height:100px;
+  padding-bottom:50px;
+}
+.main h2{
+	color:#754c24;
+	display:block;
+	text-align:center;
+	background-color:rgb(255 255 255 / 0%);
+	margin:0 auto;
+	padding-top:50px;
+	padding-bottom:30px;
+}
+.main h3{
+	display:none;
+}
+.main h5{
+	display:block;
+    padding-left:0;
+    padding-top:15px;
+    color: #8b4513;
+    text-align:center;
+    font-size:17px;
+}
+.soto{
+	display:block;
+	width:100%;
+	background-image:url(../images/stone-tile03.jpg);
+}
+.soto img{
+	width:100%;
+	margin-top:-35px;
+	margin-bottom:40px;
+}
+/* ============================================= */
+/* 会社概要*/
+/* ============================================= */
+
+.info-oya {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  /*box-sizing: content-box;*/
+}
+.info {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  padding:0;
+  margin:0;
+}
+.info:nth-child(1){
+  padding: 0;
+  margin-top:160px;
+}
+.info:nth-child(2), .info:nth-child(3), .info:nth-child(6), .info:nth-child(7), .info:nth-child(8){
+  padding: 10px 0;
+}
+.info:nth-child(4){
+  padding:5px 0;
+}
+.info:nth-child(5), .info:nth-child(9){
+  padding: 0;
+}
+.info dt {
+	width:200px;
+	text-align:left;	
+}
+.info:nth-child(1) dt{
+  margin-top: 10px;
+}
+.info:nth-child(2) dt, .info:nth-child(7) dt{
+  margin-left: 30px;
+}
+.info:nth-child(3) dt{
+  margin-left: 40px;
+}
+.info:nth-child(4) dt{
+  margin-left: 20px;
+  margin-top:10px;
+}
+.info:nth-child(5) dt{
+  margin-left: 25px;
+  margin-top:1px;
+}
+.info:nth-child(6) dt, .info:nth-child(8) dt, .info:nth-child(9) dt{
+  margin-left: 25px;
+  width:20%;
+}
+.info dd {
+	text-align:right;
+	margin:0;
+	padding-right:20px;
+	width:250px;
+	color:#754c24;
+	font-size:15px;
+}
+.info:nth-child(6) dd{
+	width:50%;
+}
+.info:nth-child(9) d{
+	width:100px;
+}
+/* ======================= */
+/* GALLERYページ */
+/* ======================= */
+#content {
+  width: 100%;
+  background-color: #ffffff;
+}
+#content h2 {
+  text-align: center;
+  margin-top: 0;
+}
+.sub-oya {
+  width: 100%;  
+  margin: 0 auto;
+  display:block;
+}
+.sub {
+  width: 80%;
+  margin: 10px auto 60px auto;
+  padding: 10px;
+}
+.sub img {
+  width: 100%; 
+}
+/* ======================= */
+/* フッター */
+/* ======================= */
+/* footer {
+  width: 100%;
+  background-color: #ffffff;
+} */
+.box {
+ display: flex;
+ justify-content: space-around;
+ background-color: #f2f2f2;
+}
+#left {
+ /* background-color: #006837; */
+ flex-basis: 15%;
+ height: 880px;
+}
+#right {
+ /* background-color: #e70006; */
+ flex-basis: 15%;
+ /* text-align: center; */
+ height: 880px;
+}
+#right img {
+ width: 100%;
+}
+.box2 {
+  margin-top: 800px;
+}
+#container {
+ display: flex;
+ flex-direction: column;
+ flex-basis: 100%;
+ margin: 20px auto 0 auto;
+}
+/*=========================*/
+.map {
+display:block;
+height: 0;
+overflow: hidden;
+padding-bottom: 56.25%;
+position: relative;
+visibility: visible;
+}
+.map iframe {
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+}
+/*========================*/
+.footer-nav {
+ display: none;
+}
+.info-oya2 {
+ display:block;
+ width: 250px;
+ height: 1px;
+ margin: 0 auto;
+ visibility: visible;
+}
+.info-logo img {
+  width: 100%;
+}
+adress {
+  font-size: 15px;
+}
+.border {
+  width: 300px;
+  border-bottom: solid 1px;
+  margin: 20px 200px 40px -30px;
+}
+.footer-nav2 {
+display:block;
+  width: 100%;
+  margin: 0 auto;
+}
+/*============テーブル============*/
+table {
+  margin: 0px auto;
+  font-size: small;
+}
+table.row {
+  visibility: visible;
+  margin-top: 320px;
+}
+table tr {
+  margin-top: 100px;
+}
+table.row td {
+  width:100%;
+  display:block;
+}
+table.row td:nth-child(1) {
+  margin-top: 10px;
+}
+small {
+  margin: 20px 0;
+  text-align: center;
+}
+}
