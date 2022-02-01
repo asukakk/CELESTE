@@ -151,7 +151,7 @@ nav {
 /* ======================= */
 #content {
    width: 100%;
-   background-image: url(../images/main2.jpg);
+   background-image: url(main2.jpg);
    background-size: cover;
    background-repeat: no-repeat;
 }
