@@ -102,13 +102,13 @@ nav {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  background-image:url(../images/stone-tile03.jpg);
+  background-image:url(stone-tile03.jpg);
 }
 
 .main{
   width: 25%;
   height: 480px;
-  background-image:url(../images/about1.jpg); /* 画像サイズ調整中中 */
+  background-image:url(about1.jpg); /* 画像サイズ調整中中 */
   margin: 50px auto;
 }
 
@@ -119,7 +119,7 @@ nav {
 }
 .main:last-child {
   width:25%;
-  background-image:url(../images/about2.jpg);/* 画像サイズ調整中 */
+  background-image:url(about2.jpg);/* 画像サイズ調整中 */
   margin-right:80px;
 }
 
@@ -411,7 +411,7 @@ display:none;
 	margin-top:0;
 	margin-bottom:0;
 	padding-top:80px;
-	background-image:url(../images/stone-tile03.jpg);
+	background-image:url(stone-tile03.jpg);
 	/*background-blend-mode:lighten;*/
 }
 .cont {
@@ -422,7 +422,7 @@ display:none;
 .main-oya{
 	width:100%;
 	display:block;
-	background-image:url(../images/stone-tile03.jpg);
+	background-image:url(stone-tile03.jpg);
 }
 .main{
 	width:100%;
@@ -463,7 +463,7 @@ display:none;
 .soto{
 	display:block;
 	width:100%;
-	background-image:url(../images/stone-tile03.jpg);
+	background-image:url(stone-tile03.jpg);
 }
 .soto img{
 	width:100%;
