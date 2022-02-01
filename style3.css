@@ -1,0 +1,642 @@
+@charset "utf-8";
+
+/* ======================= */
+/* 共通設定*/
+/* ======================= */
+body {
+   margin: 0;
+   padding: 0;
+   color: #202020;
+   font-family :
+	YuGothic,    /* Mac用 */
+	'Yu Gothic', /* Windows用 */
+	sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+#menu-btn-check {
+    display: none;/* ===ハンバーガーメニューに必要な共通タグ=== */
+}
+
+/* ======================= */
+/* ヘッダー */
+/* ======================= */
+header {
+   width: 100%;
+   margin: 0 auto;
+   background-color: #ffffff;  
+   position: fixed;
+   top: 0;
+   left: 0;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 10px;
+}
+
+.logo img {
+  width: 240px;
+}
+
+.list {
+   width: 880px;
+   height: 50px;
+   line-height: 50px;
+   margin: 100px auto 0 auto;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   list-style-type: none;
+}
+
+/* ======================= */
+
+.list a:link {
+  color: #202020;
+}
+
+.list a:hover{
+  text-decoration: underline;
+  color: #ff0000;
+}
+
+.list a:visited{
+  color: #551a8c;
+}
+
+.list a:active{
+  color: #ff0000;
+}
+
+/* ======================= */
+/* CONTACT FORM  */
+/* ======================= */
+#top {
+   width: 100%;   
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: 80px;
+  }
+
+#top h1 {
+   padding-top: 260px;
+}
+
+.cont {
+   width: 100%;
+   margin: 0 auto;
+   /* padding: 50px 30px; */
+   background-image: url(../images/stone-tile03.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.form-cont {
+  width: 880px;
+  margin: 0 auto;
+}
+
+form {
+ width: 800x;
+ margin: 0 auto;
+ padding: 0 0 30px 130px;
+ font-size: 14px;
+ text-align: left;
+}
+
+/* ======================= */
+/* FAQ */
+/* ======================= */
+.faq {
+  width: 600px;
+  padding: 30px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.center {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.faq-btn {
+  padding: 3px 20px;
+  margin-top: 30px;
+}
+
+.faq-btn a {
+  color: #202020;
+}
+/* ======================= */
+
+input[type="text"] {
+  width: 400px;
+  height: 25px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+input[type="email"] {
+  width: 400px;
+  height: 25px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+input[type="radio"] {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+textarea {
+  min-width: 640px;
+  min-height:150px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.caution {
+  width: 600px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.privacy {
+  text-align: center;
+}
+
+.button {
+  width: 640px;
+  margin-top: 30px;
+}
+.btn {
+  display: block;
+  width: 208px;
+  margin: 0 auto;
+  padding: 11px 13px;
+  box-sizing: border-box;
+  border:solid 2px cadetblue;
+  background-color: #ffffff;
+  color: #2E5180;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ======================= */
+/* フッター */
+/* ======================= */
+footer {
+   width: 100%;
+   background-color: #ffffff;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f2f2f2;
+}
+
+#left {
+  background-color: #006837;
+  flex-basis: 30%;
+  height: 280px;
+}
+  
+#right {
+  background-color: #e70006;
+  flex-basis: 30%;
+  text-align: center;
+  height: 280px;
+ }
+  
+#right img {
+  width: 80px;
+}
+.box2 {
+   margin-top: 180px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin: 0 auto;
+}
+
+.map {
+  visibility: hidden;
+}
+
+.map iframe {
+position: absolute;
+left: 0;
+top: 0;
+height: 10%;
+width: 10%;
+}
+
+.info-oya {
+  visibility: hidden;
+  width: 800px;
+  height: 20px;
+  margin-top: 50px;
+}
+
+.info-logo img {
+  width: 1%;
+  text-align:center;
+}
+
+.footer-nav {
+  width: 800px;
+  margin: 0px auto;
+}
+
+table {
+   margin: 0px auto;
+   font-size: small;
+}
+
+table.row {
+  visibility: hidden;
+}
+
+table td {
+   padding: 0 10px;
+}
+small {
+  margin: -50px auto 10px auto;
+  text-align: center;
+}
+
+/* ======================= */
+/* レスポンシブ*/
+/* ======================= */
+
+@media screen and (max-width:768px) {
+
+/* ======================= */
+/* ハンバーガーメニュー*/
+/* ======================= */
+.list{
+	display:block;
+	width:auto;
+	height:auto;
+	line-height:20px;
+	margin:0 auto;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #cbcbcb;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+#menu-btn-check {
+    display: none;
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #3584bb;
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #202020;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#202020;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #202020;
+    border-right: solid 2px #202020;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #eee;
+    transition: all 0.5s;/*アニメーション設定*/
+}
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+
+/* ======================= */
+/* ヘッダー*/
+/* ==========↓↓↓部分ハンバーガーメニューチェックの為、仮で入れてます。============= */
+
+  header {
+    width: 100%;
+    /* height: 440px;
+    margin: 0 auto;
+    background-image: url(../images/hero.jpg);  
+    background-size: cover; 
+    background-repeat: no-repeat;
+    position: initial;  */
+ }
+ 
+
+ .logo {
+   display: none;
+ }
+
+/* ======================= */
+/* CONTACT FORM  */
+/* ======================= */
+
+/*#top {
+   width: 100%;   
+   margin: o auto;
+   text-align: center;
+   margin-bottom: 80px;
+  }*/
+
+#top h1 {
+  margin-top:10px;
+	margin-bottom:10px;
+	padding-top:80px;
+}
+
+.cont {
+   width: 100%;    /* 変更前100% */
+  margin: 0 auto;
+   padding: 50px 0;;
+   background-color: #f2f2f2;
+}
+
+.form-cont {
+  width: 100%;
+}
+
+form {
+ width: 240px;   /* 変更前880px */
+ padding: 0;
+ /* margin: 0 auto;
+ font-size: 14px;
+ text-align: left; */
+}
+
+/* ======================= */
+/* FAQ */
+/* ======================= */
+.faq {
+  width: 100%;
+  padding: 20px;
+  margin-left: -15px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  text-align: center;
+}
+
+
+input[type="text"] {
+  width: 240px;
+  /* height: 25px;
+  margin-top: 10px;
+  margin-bottom: 30px; */
+}
+
+input[type="email"] {
+  width: 240px;
+  height: 25px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+input[type="radio"] {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+textarea {
+  min-width: 240px;
+ /* min-height:150px;
+  margin-top: 10px;
+  margin-bottom: 30px;*/
+}
+
+.caution {
+  width: 100%;   /* 変更前660px */
+  padding: 20px;
+  margin-left: -18px;
+}
+
+.privacy {
+  text-align: center;
+}
+
+.button {
+  width: 640px;
+  margin-top: 30px;
+}
+.btn {
+  display: block;
+  width: 208px;
+  /* margin: 0 auto; */
+  margin-right: 410px;
+  padding: 11px 13px;
+  box-sizing: border-box;
+  border:solid 2px cadetblue;
+  color: #2E5180;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* ======================= */
+/* フッター */
+/* ======================= */
+
+.box {
+width: 100%;
+display: flex;
+background-color: #ffffff;
+}
+
+#left {
+ /* background-color: #006837; */
+ flex-basis: 15%;
+ height: 880px;
+}
+ 
+#right {
+ /* background-color: #e70006; */
+ flex-basis: 15%;
+ /* text-align: center; */
+ height: 880px;
+}
+
+#right img {
+ width: 100%;
+}
+
+.box2 {
+  margin-top: 750px;
+}
+
+#container {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ flex-basis: 100%;
+ margin: 0 auto 0 auto;
+}
+
+
+/*=========================*/
+
+
+.map {
+height: 0;
+overflow: hidden;
+padding-bottom: 56.25%;
+position: relative;
+visibility: visible;
+}
+
+.map iframe {
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+}
+
+
+/*========================*/
+.footer-nav {
+ display: none;
+}
+
+.footer-nav2 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.info-oya {
+ width: 250px;
+ margin: 0 auto;
+ visibility: visible;
+}
+
+
+.info-logo img {
+  width: 100%;
+}
+
+adress {
+  font-size: 15px;
+}
+
+.border {
+  width: 250px;
+  border-bottom: solid 1px;
+  margin: 20px auto 20px auto;
+}
+
+
+/*============テーブル============*/
+
+table {
+  margin: 0px auto;
+  font-size: small;
+}
+
+table.row {
+  visibility: visible;
+  margin-top: 320px;
+}
+
+table tr {
+  margin-top: 100px;
+}
+table.row td {
+  width:100%;
+  display:block;
+}
+
+table.row td:nth-child(1) {
+  margin-top: 10px;
+}
+
+small {
+  margin: 10px auto;
+  text-align: center;
+}
+}
+
