@@ -89,7 +89,7 @@ nav {
 #top {
    width: 100%;   
    padding-bottom: 50rem;
-   background-image: url(../images/main1.jpg);
+   background-image: url(main1.jpg);
    background-size:cover;
 }
 
@@ -337,7 +337,7 @@ nav {
   text-align: center;
   height: 660px;
   line-height: 60px;
-  background-image:url(../images/mainls1.jpg);
+  background-image:url(mainls1.jpg);
   background-size:cover;　　　/*写真サイズ調整必要箇所*/
 }
 .logo h3{
